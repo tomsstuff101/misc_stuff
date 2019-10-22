@@ -1,0 +1,175 @@
+WebAssembly (Wasam)
+
+assembly - low level language  - to a vm - portable and fast - secure (sandboxed)
+
+low level but not absoloutley low level (eg if statements)
+
+asm.js - was a past incarnation of WebAssembly (kind of) 
+
+
+Creating WebAssembly (for say C++)
+
+        C++ code -->  Emcripten --> Wasam Module + [ HTML document + JS 'glue' code]
+
+Rust, C#, Go, Python... etc under development
+
+
+What can be done in Wasam?
+    Calcs
+    Calling JS / vice versa
+    Transferrig data
+
+NOT yet
+    Multi-threading
+    No DOM access
+    Direct Web API access
+    
+All major browser from 2017
+
+
+Whats WebAssembly USed for Now?
+
+Same Code Base
+the online version has the *same* common source code as desktop, but is recomplied as wasam
+    
+Examples include
+    AutoCAD 
+    Google Earth (now includes Linux because its Wasam)
+    
+Demo apps
+    VR
+    Doom 3
+    NginX web server
+    Python interpeter    
+    
+
+Python on Web browser
+    Python is one of the main languages used for AI. With Wasam it becomes possible for AI developers to implement on the browser hence AI an ALL operating systems without
+    having to retrain in Javascript. 
+    
+Future 
+    Windows based apps
+    Microsft has droped there own engine in the Edge browser and now uses Googles V8
+    My bet: this is yet more strong evidence that Microsft will switch Windows to a Linux based operating system
+    
+Runtime as a service
+    Clouflare workers (run code in the cloud)
+    So Wasam is on the server side, allowing 'any' code base to be used
+    Could be an alternative to Nodejs, Electron Javascript based applications
+    Common runtime format
+    Portable- use for embedded IoT devices
+    
+Speed
+    (WasamBoy benchmark 2018 compared to Javascript)
+    90% faster on Firefox
+    30% faster on Chrome
+    30% slower on Safari
+    
+    45% of Native speed (rough)
+    
+    
+    
+    --------------------
+    
+    Cartoon WebAssembly Intro
+    
+    Javascript 1995 ~ 2008 slow
+    2008 Just in Time compliers   x10 faster!
+    2009 Ryna Dahi - NodeJs - Server and Client side - new problems
+    2017 WebAssembly 
+    
+    
+    
+            JIT (rough explanation)
+            interprit - line by line translation to mc (quick to get to run  but ineeficent)
+            complie - whole code tanslated to mc (slow to get to run but efficent)
+    
+            Javascript engine has a monitor to watch code, see how many times its run (how hot it is). If many times its optimise by compiling the code. Other variations on this theme
+    
+    
+            Assembly
+            CPU (Processor) has 
+                ALU - 'brain'
+                registers - 'short memory' 
+                RAM- 'longer memory'
+            Instructions - lines of 1's and 0's (64)
+            These instruction control the ALU
+            Converted to 'English phrases' they are called Assembly
+            Software not normally built in Assembly!!
+            Assembly HIGHLY specific to a chip ie machine architecture
+            
+        
+        Webassembly
+        Execute code on a machine where the machine archetecture is unknown.
+        So long as it has a browser (engine) - Chrome (v8) or Firefox (Quantum) - its executable
+        
+        Webassembly is assembly to a 'vrtual machine' that sitts on to of the reall operating system.
+        
+        (Java old-timers have seen this concept before)
+        
+        
+        Compling to WebAssembly using Emscripten
+        
+        
+        Why is it fast?
+        In future the React team could create a WebAssembly version of the virtual DOM. React itself would workthe same but with WebAssembly benift of speed.
+            WebAssembly
+                more compact than JavaScript; fetching over a network is faster
+                starts off much closer to machine code
+                no need to make assumptions (eg types) based on runtime data gathering.
+                + other optimisations
+                
+        
+Real World Cases
+1) Speed up your web apps eg. 1Password
+
+2)  Desktop apps/ games to web via WebAssembly
+AutoCAD
+Doom3 
+
+Note: Games are based on infinite loops (no event listners), waiting for input like mouse, key, etc. But infinite loops are bad for a browser as they block the main thread, crash the browser tab - Enscripten has functions to fix this
+
+3) WebAssembly outside the browser
+WASI - WebAssembly System Interface. 
+API for access to sytem stuff like files etc. being propsed as a future standard
+
+
+
+How to use WebAssembly in your app
+https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts
+
+"The Emscripten tool is able to take just about any C/C++ source code and compile it into a .wasm module, plus the necessary JavaScript "glue" code for loading and running the module, and an HTML document to display the results of the code."
+
+"
+
+    Emscripten first feeds the C/C++ into c..a mature open-source C/C++ compiler toolchain..eg XCode on OSX.
+    
+    Emscripten transforms into a .wasm binary.
+    
+    WebAssembly cannot currently directly access the DOM and any Web API, WebAssembly calls JavaScript to makes the Web API call. Emscripten therefore creates the HTML and JavaScript 'glue code' needed to achieve this.
+    
+"
+
+
+
+
+
+https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/
+
+https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts
+    
+https://webassembly.org/
+
+https://github.com/mbasso/awesome-wasm
+
+https://www.levelupwasm.com/apps/asteroids/index.html
+
+https://github.com/robertaboukhalil/wasm-asteroids
+
+https://opensource.com/article/19/4/command-line-playgrounds-webassembly
+
+https://medium.com/@robaboukhalil/hit-the-ground-running-with-webassembly-56cf9b2fa35d
+
+https://hacks.mozilla.org/2019/04/pyodide-bringing-the-scientific-python-stack-to-the-browser/
+
+

@@ -1,0 +1,47 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$primary-color-dark:   #D32F2F;
+$primary-color:        #F44336;
+$primary-color-light:  #FFCDD2;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #9E9E9E;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+//$body-bg: palette(Teal, A700);
+//$body-color: palette(Deep Orange, 900);
+
+$body-bg: $primary-color-dark;
+$body-color: $primary-color-text;
+
+//
+// Links
+//
+// Style anchor elements.
+
+$link-color:            $primary-color;
+$link-decoration:       none;
+$link-hover-color:      darken($link-color, 25%);
+$link-hover-decoration: underline;
+
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: "Fira Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:  "Fira Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:       $font-family-sans-serif;

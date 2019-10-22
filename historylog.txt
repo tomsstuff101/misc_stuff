@@ -1,0 +1,50 @@
+  466  git commit -m"amended readme"
+  467  git push origin master
+  468  git add README.md 
+  469  git commit -m"amended readme breaks"
+  470  git push origin master
+  471  git add README.md 
+  472  git commit -m"amended readme breaks"
+  473  git push origin master
+  474  git add README.md 
+  475  git commit -m"amended readme "
+  476  git push origin master
+  477  git add README.md 
+  478  git commit -m"amended readme "
+  479  git push origin master
+  480  git add README.md 
+  481  git commit -m"amended readme "
+  482  git push origin master
+  483  git add README.md 
+  484  git commit -m"amended readme "
+  485  git push origin master
+  486  git add README.md 
+  487  git commit -m"amended readme "
+  488  git push origin master
+  489  git add README.md 
+  490  git commit -m"amended readme "
+  491  git push origin master
+  492  git add README.md 
+  493  git commit -m"amended readme "
+  494  git push origin master
+  495  git status
+  496  git add .gitignore
+  497  git commit -m "amended .gitignore"
+  498  git push origin master
+  499  npm install -g heroku
+  500  sudo npm install -g heroku
+  501  npm install -g npm
+  502  sudo npm install -g npm
+  503  heroku --version
+  504  heroku login
+  505  cd Desktop/tomsStuff
+  506  ls -al
+  507  cd weather-app/
+  508  ls
+  509  heroku login
+  510  git status
+  511  heroku create
+  512  git remote -v
+  513  cat history | tail -50n >> ~/Desktop/historylog.txt
+  514  history | tail -50n >> ~/Desktop/historylog.txt
+  515  history | tail -n50 >> ~/Desktop/historylog.txt

@@ -1,0 +1,54 @@
+insert into orders (order_date, amount, customer_id) values ('2017-06-19', 258.21, 43);
+insert into orders (order_date, amount, customer_id) values ('2018-07-30', 821.65, 33);
+insert into orders (order_date, amount, customer_id) values ('2018-09-26', 993.79, 39);
+insert into orders (order_date, amount, customer_id) values ('2018-01-16', 344.69, 36);
+insert into orders (order_date, amount, customer_id) values ('2019-09-04', 747.85, 34);
+insert into orders (order_date, amount, customer_id) values ('2019-03-15', 780.39, 38);
+insert into orders (order_date, amount, customer_id) values ('2018-12-24', 300.47, 48);
+insert into orders (order_date, amount, customer_id) values ('2018-05-12', 470.43, 4);
+insert into orders (order_date, amount, customer_id) values ('2018-07-16', 813.67, 41);
+insert into orders (order_date, amount, customer_id) values ('2019-06-14', 987.01, 32);
+insert into orders (order_date, amount, customer_id) values ('2017-03-01', 110.54, 20);
+insert into orders (order_date, amount, customer_id) values ('2019-04-28', 651.07, 6);
+insert into orders (order_date, amount, customer_id) values ('2017-01-23', 28.84, 37);
+insert into orders (order_date, amount, customer_id) values ('2016-12-07', 325.95, 20);
+insert into orders (order_date, amount, customer_id) values ('2019-03-15', 612.63, 41);
+insert into orders (order_date, amount, customer_id) values ('2018-06-14', 72.72, 5);
+insert into orders (order_date, amount, customer_id) values ('2017-06-20', 666.19, 34);
+insert into orders (order_date, amount, customer_id) values ('2019-08-01', 318.68, 34);
+insert into orders (order_date, amount, customer_id) values ('2018-07-06', 392.61, 23);
+insert into orders (order_date, amount, customer_id) values ('2017-05-08', 6.86, 35);
+insert into orders (order_date, amount, customer_id) values ('2017-09-23', 601.81, 27);
+insert into orders (order_date, amount, customer_id) values ('2017-03-26', 226.25, 37);
+insert into orders (order_date, amount, customer_id) values ('2019-02-03', 351.87, 34);
+insert into orders (order_date, amount, customer_id) values ('2016-11-26', 579.7, 17);
+insert into orders (order_date, amount, customer_id) values ('2018-11-21', 977.76, 28);
+insert into orders (order_date, amount, customer_id) values ('2019-09-06', 159.64, 15);
+insert into orders (order_date, amount, customer_id) values ('2018-09-20', 788.45, 17);
+insert into orders (order_date, amount, customer_id) values ('2017-08-03', 669.25, 41);
+insert into orders (order_date, amount, customer_id) values ('2017-09-22', 983.6, 39);
+insert into orders (order_date, amount, customer_id) values ('2017-05-17', 602.88, 49);
+insert into orders (order_date, amount, customer_id) values ('2018-06-28', 445.37, 36);
+insert into orders (order_date, amount, customer_id) values ('2019-09-05', 606.58, 38);
+insert into orders (order_date, amount, customer_id) values ('2019-07-31', 965.32, 33);
+insert into orders (order_date, amount, customer_id) values ('2019-05-27', 120.38, 44);
+insert into orders (order_date, amount, customer_id) values ('2018-03-18', 789.75, 28);
+insert into orders (order_date, amount, customer_id) values ('2018-11-28', 925.87, 35);
+insert into orders (order_date, amount, customer_id) values ('2017-06-18', 293.51, 2);
+insert into orders (order_date, amount, customer_id) values ('2018-01-26', 348.55, 45);
+insert into orders (order_date, amount, customer_id) values ('2017-04-20', 996.04, 19);
+insert into orders (order_date, amount, customer_id) values ('2019-05-20', 862.62, 5);
+insert into orders (order_date, amount, customer_id) values ('2017-11-27', 547.71, 23);
+insert into orders (order_date, amount, customer_id) values ('2019-05-30', 883.66, 15);
+insert into orders (order_date, amount, customer_id) values ('2019-08-10', 837.24, 25);
+insert into orders (order_date, amount, customer_id) values ('2018-03-19', 298.86, 33);
+insert into orders (order_date, amount, customer_id) values ('2018-09-29', 287.83, 18);
+insert into orders (order_date, amount, customer_id) values ('2017-07-20', 575.56, 1);
+insert into orders (order_date, amount, customer_id) values ('2018-07-11', 850.49, 18);
+insert into orders (order_date, amount, customer_id) values ('2017-10-05', 655.18, 47);
+insert into orders (order_date, amount, customer_id) values ('2016-10-07', 565.77, 24);
+insert into orders (order_date, amount, customer_id) values ('2019-03-22', 674.91, 33);
+
+
+
+

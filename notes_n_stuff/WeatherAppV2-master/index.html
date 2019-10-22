@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <!-- 
+    Note: validator produces warnings without the 'if IE' wrapper  
+    see  http://lists.w3.org/Archives/Public/www-validator/2011Mar/0053.html
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+<!--  ****  TITLE HERE -->
+    <title>FreeCodeCamp Weather app</title>
+
+<!--  ****  DESCRIPTION HERE -->
+    <meta name="description" content="Show the Local Weather Objective: Build a CodePen.io app that is functionally similar to this: http://codepen.io/FreeCodeCamp/full/bELRjV . Can see the weather in current location.Can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.Can push a button to toggle between Fahrenheit and Celsius. Use the Open Weather API.">
+        
+<!--  ****  AUTHOR HERE -->
+    <meta name="author" content="Tom Ormiston">
+    
+<!--  ****  KEYWORDS HERE -->
+    <meta name="keywords" content="weather, free code camp, FCC, FreeCodeCamp">
+        
+   
+    <!-- CSS Sass link  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    
+    <!--  ****  other LINKS HERE -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+
+</head>
+<body>
+
+<header class="container">
+  <div id="locationName"></div>
+</header>
+
+   <div id="loadingMessage" class="loadingUpWeather" data-visible="show">
+   <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+   <span>GETTING YOUR WEATHER</span></div>
+   
+   <div id="errorMessage" class="displayError" data-visible="hidden">
+   </div>
+
+
+
+  <div id="info" class="wrapper" data-visible="hidden">
+
+    <div class="container">
+      <div class="row flex-items-xs-middle">
+        <div class="col-xs-12 col-sm-6 flexstart">
+            <div class="weatherIconCentered">
+            <i id="weatherSymbol" class="wi weatherIconScale"></i>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6  flexend">
+            <div class="temp">
+              <h1 id="tempValue" class="tempDig"></h1>
+              <button id="tempUnits" type="button" class="btn btn-lg" data-units="fahrenheit"></button>
+            </div>
+            <p id="weatherDescription" class="info"></p>
+            <div class="windIconLeft">
+            <i id="windSpeed" class="wi windyScale"></i>
+           </div>
+        </div>
+      </div>
+    </div>
+ </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p>made with &#9829; for the FreeCodeCamp course</p>
+      </div>
+    </footer>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!--  **** JS SCRIPTS   -->
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script src="https://use.fontawesome.com/89e0d1dec9.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<!-- main javascript  -->
+    <script src="./assets/js/main.js"></script>   
+</body>
+</html>
+
+
+
